@@ -30,7 +30,7 @@ if(toggled_menu){
 	}
 	draw_sprite_ext(s_bag,0,room_width-50,50,
 					1,1,0,hovered_bag?c_gray:-1,1)
-	if(mouse_check_button_pressed(mb_left)){
+	if(mouse_check_button_pressed(mb_left) && hovered_bag){
 		hovered_bag=false
 		toggled_index=toggled_menu_indexes[0]
 		toggled_menu=true
