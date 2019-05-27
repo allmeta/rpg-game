@@ -1,7 +1,7 @@
 {
     "id": "2efcfd47-cc8d-4b57-b8e6-b90fc4f6122c",
     "modelName": "GMFont",
-    "mvc": "1.0",
+    "mvc": "1.1",
     "name": "normal",
     "AntiAlias": 0,
     "TTFName": "",
@@ -10,6 +10,7 @@
     "charset": 0,
     "first": 0,
     "fontName": "Rockwell Condensed",
+    "glyphOperations": 0,
     "glyphs": [
         {
             "Key": 32,
@@ -1452,8 +1453,9 @@
             }
         }
     ],
-    "image": null,
+    "hinting": 0,
     "includeTTF": false,
+    "interpreter": 0,
     "italic": false,
     "kerningPairs": [
         {
@@ -2370,6 +2372,8 @@
         }
     ],
     "last": 0,
+    "maintainGms1Font": false,
+    "pointRounding": 0,
     "ranges": [
         {
             "x": 32,

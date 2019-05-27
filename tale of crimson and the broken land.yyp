@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "81a681e5-ffdf-4ed5-a449-6f2420154e5b",
+            "Value": {
+                "id": "d23ee381-0a77-4717-9c63-693d2b9d3bc2",
+                "resourcePath": "sprites\\s_bag\\s_bag.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "856ceccd-5534-4d7f-8e53-6710660e5ff2",
             "Value": {
                 "id": "127843cf-b46c-455c-a37b-7e064ddb4e1e",

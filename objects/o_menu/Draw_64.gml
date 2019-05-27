@@ -23,4 +23,16 @@ if(toggled_menu){
 								toggled_menu_indexes[i])
 	}
 	
+}else{
+	var hovered_bag=false
+	if(point_in_circle(mx,my,room_width-50,50,24)){
+		hovered_bag=true
+	}
+	draw_sprite_ext(s_bag,0,room_width-50,50,
+					1,1,0,hovered_bag?c_gray:-1,1)
+	if(mouse_check_button_pressed(mb_left)){
+		hovered_bag=false
+		toggled_index=toggled_menu_indexes[0]
+		toggled_menu=true
+	}
 }
