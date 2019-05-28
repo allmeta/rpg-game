@@ -7,6 +7,8 @@ text_len=0
 counter=0 //for not displaying text instantly
 next_line=-1 //array 
 
+is_dialogue=false //yup
+
 select_index=0 //for choice dialogue
 select_max=0
 

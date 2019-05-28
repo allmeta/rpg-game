@@ -13,7 +13,7 @@ draw_rectangle(name_x1,name_y1,name_x2,name_y2,0)
 draw_set_color(c_mint)
 draw_rectangle(name_x1-1,name_y1,name_x2,name_y2,1)
 //conv text
-if(is_array(text[index])){
+if(is_dialogue){
 	//optionzz <3
 	draw_set_font(normal)
 	draw_set_color(c_white)
@@ -28,11 +28,7 @@ if(is_array(text[index])){
 		draw_text_ext(margin_x1+30,margin_y1+10+(i)*30,
 		t[i],-1,box_w-10)
 		draw_set_color(c_white)
-		
-		
 	}
-	
-	
 }else {
 	draw_set_font(normal)
 	draw_set_color(c_white)
