@@ -5,7 +5,8 @@ collided=false
 
 conv_text[0]=""
 
-conv_speaker=""
+conv_speaker[0]=""
+conv_next_line[0]=-1
 name="default"
 
 conv_obj=noone

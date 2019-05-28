@@ -19,9 +19,20 @@ if(is_array(text[index])){
 	draw_set_color(c_white)
 	for(var i=0; i<array_length_1d(text[index]);i++){
 		var t=text[index]
-		draw_text_ext(margin_x1+5,margin_y1+5+i*30,
+		//selected indicator
+		draw_text(margin_x1+5,margin_y1+10+i*30,string(i+1)+">")
+		if select_index==i{
+			//draw_sprite(s_arrow,-1,margin_x1+14,margin_y1+20+(i)*30)
+			draw_set_color(c_mint)
+		}
+		draw_text_ext(margin_x1+30,margin_y1+10+(i)*30,
 		t[i],-1,box_w-10)
+		draw_set_color(c_white)
+		
+		
 	}
+	
+	
 }else {
 	draw_set_font(normal)
 	draw_set_color(c_white)
