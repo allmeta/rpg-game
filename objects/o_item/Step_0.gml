@@ -7,3 +7,4 @@ if(distance_to_object(o_player)<16){
 }else{
 	collided=false
 }
+depth=-y

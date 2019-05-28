@@ -12,10 +12,10 @@ var a = room_width/2
 index_len=array_length_1d(toggled_menu_indexes)
 index_coords=ds_grid_create(index_len,2)
 hovered_index=-1
+draw_set_font(big)
 for( var i=0;i<index_len;i++){
-		var l = string_width(toggled_menu_indexes[i])*1.5
-		
-		var xx=a + a * (i - index_len/2)/ index_len - l/2
+		var l = string_width(toggled_menu_indexes[i])
+		var xx=a + a * (i - index_len/2)/ index_len +20
 		index_coords[# i, 0]=xx
 		index_coords[# i, 1] = l
 }

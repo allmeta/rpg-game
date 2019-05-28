@@ -9,3 +9,5 @@ vx=0
 vy=0
 
 wdir=0
+
+name="You"
