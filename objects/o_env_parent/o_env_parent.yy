@@ -5,13 +5,13 @@
     "name": "o_env_parent",
     "eventList": [
         {
-            "id": "e1cbabc5-1f0f-4292-adbe-8896665ac08f",
+            "id": "c9cb4acc-39f1-4d69-a8e5-eecdaf9d9fbf",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 3,
+            "eventtype": 0,
             "m_owner": "ebd54812-0a62-4f43-b6fe-b348c8bb6793"
         }
     ],

@@ -2,7 +2,10 @@
 // You can write your code in this editor
 if(collided){
 	if(conv_obj){
-		if conv_obj.index<array_length_1d(conv_text)-1{
+		if conv_obj.counter<conv_obj.text_len and !is_array(conv_obj.text[conv_obj.index]){
+			conv_obj.counter=conv_obj.text_len
+		}
+		else if conv_obj.index<array_length_1d(conv_text)-1{
 			with conv_obj{				
 				index++
 				event_perform(ev_other,ev_user0)

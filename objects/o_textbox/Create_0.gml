@@ -4,7 +4,9 @@ index=0
 text=-1 //array
 speaker=-1 //array
 text_len=0
-counter=0
+counter=0 //for not displaying text instantly
+
+select=0 //for choice dialogue
 
 //gui precalc
 box_w=room_width*.4
@@ -20,4 +22,4 @@ name_x2=name_x1+name_w
 name_y2=margin_y1-5
 name_y1=name_y2-20
 
-image_speed=1/10
+image_speed=1/50
