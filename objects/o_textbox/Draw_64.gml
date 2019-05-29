@@ -13,7 +13,7 @@ draw_rectangle(name_x1,name_y1,name_x2,name_y2,0)
 draw_set_color(c_mint)
 draw_rectangle(name_x1-1,name_y1,name_x2,name_y2,1)
 //conv text
-if(is_dialogue){
+if(is_decision){
 	//optionzz <3
 	draw_set_font(normal)
 	draw_set_color(c_white)

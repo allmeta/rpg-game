@@ -10,6 +10,6 @@ if(is_string(text[index])){
 	//array I guess for now
 	select_max=array_length_1d(text[index])-1
 }
-is_dialogue=is_array(text[index])
+is_decision=is_array(text[index])
 
 counter=0

@@ -1,14 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 if counter<text_len 
-and not is_dialogue{
+and not is_decision{
 	// skip text if counter is not done
 	counter=text_len
 }
 else{
 	// next line
 	var next_index=next_line[index]
-	if is_dialogue{
+	if is_decision{
 		var t=next_line[index];
 		next_index=t[select_index];
 	}
