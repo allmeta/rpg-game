@@ -8,7 +8,6 @@ if(toggled_menu){
 	draw_set_font(big)
 	for( var i=0;i<index_len;i++){
 		//check hover here :S
-		//TODO
 		if (point_in_rectangle(
 				mx,my, index_coords[# i, 0],
 				menu_bounds_y,
@@ -26,6 +25,7 @@ if(toggled_menu){
 	}
 	
 }else{
+	// bag, inventory open
 	var hovered_bag=false
 	if(point_in_circle(mx,my,room_width-50,50,24)){
 		hovered_bag=true
