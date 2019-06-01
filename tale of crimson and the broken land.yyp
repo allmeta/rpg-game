@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "4b7412c3-720c-493b-a3b2-baa57bbe7965",
+            "Value": {
+                "id": "d2ac6854-3445-44ad-81af-085b579bb435",
+                "resourcePath": "scripts\\handle_collision\\handle_collision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4c6f6090-bc35-4e68-938b-23cc78bfafd8",
             "Value": {
                 "id": "777bed80-1063-476a-900c-4fc274934d14",
@@ -607,6 +615,14 @@
             }
         },
         {
+            "Key": "a8f405c2-5194-490d-8e35-9959e1a24865",
+            "Value": {
+                "id": "70e3c6ea-5bf3-4fb6-a8c3-0fdaa863a471",
+                "resourcePath": "scripts\\npc_state_idle\\npc_state_idle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "594a9424-ed65-42cf-b893-06decba73cd0",
@@ -871,6 +887,14 @@
             }
         },
         {
+            "Key": "f4b96046-119b-48a6-ac66-a49d1b252358",
+            "Value": {
+                "id": "bb936a11-6c69-4dac-90c4-14dcd9ec5fdd",
+                "resourcePath": "scripts\\npc_state_wander\\npc_state_wander.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f5f400a2-1320-42c1-abe1-6f4cc7cd7c45",
             "Value": {
                 "id": "2f82b8d4-6a63-43c7-89d8-c5ebea19f4e8",
@@ -904,7 +928,10 @@
         "a48bc748-e0fe-4bcb-9776-1168b0b39c92",
         "63d17a09-0e8a-4207-9e06-accac178333e",
         "41e0d7d8-c3c5-4431-9217-31a1f407d45d",
-        "41b3ad70-049b-47f7-b60a-6d15e64d843e"
+        "41b3ad70-049b-47f7-b60a-6d15e64d843e",
+        "a8f405c2-5194-490d-8e35-9959e1a24865",
+        "f4b96046-119b-48a6-ac66-a49d1b252358",
+        "4b7412c3-720c-493b-a3b2-baa57bbe7965"
     ],
     "tutorial": ""
 }

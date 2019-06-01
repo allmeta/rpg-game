@@ -22,7 +22,7 @@ if (o_menu.toggled_menu && o_menu.toggled_index=="Equip"){
 	//	draw_sprite_ext(s_item, o_global.items[# item_id,ID],x+(size)/2,y+(size)/2,1,1,0,c_white,1)
 		draw_sprite_ext(o_global.items[# item_id,_SPRITE],
 										o_global.items[# item_id,_SPRITE_ID],
-										x+size/2,y+size/2, 1,1,0,c_white,1)
+										x+size/2,y+size/2, 1,1,0,-1,1)
 	}else{
 		draw_sprite_ext(//s_item, index+1,
 											o_global.slot_to_sprite[?slot],

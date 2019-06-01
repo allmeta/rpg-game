@@ -6,6 +6,6 @@ with o_inv{
 		var i=inventory[| held_item];
 		draw_sprite_ext(o_global.items[# i.item_id,_SPRITE],
 										o_global.items[# i.item_id,_SPRITE_ID],
-										mx,my, 1,1,0,c_white,1)
+										mx,my, 1,1,0,-1,1)
 	}else window_set_cursor(cr_default)
 }

@@ -45,13 +45,21 @@ globalvar c_background,c_empty_slot,c_slot_border_empty,c_slot_border,c_empty_sl
 c_background=make_color_rgb(43, 44, 46)
 c_empty_slot=make_color_rgb(36, 36, 36)
 c_empty_slot_hover=make_color_rgb(66,66 , 66)
-//c_slot_border=make_color_rgb(197,197,197)
-c_slot_border=make_color_rgb(0,255,150)
+c_slot_border=make_color_rgb(197,197,197)
+//c_slot_border=make_color_rgb(255,255,255)
 c_slot_border_empty=make_color_rgb(66,66,66)
-c_mint=make_color_rgb(0,255,150)
+c_mint=make_color_rgb(255,255,255)
 
 //gui mouse 
 globalvar mx, my;
+
+//state
+enum states{
+	idle,
+	wander,
+	alert,
+	attack
+}
 
 //stats
 //base, unaffected by external sources

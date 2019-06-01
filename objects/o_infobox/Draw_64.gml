@@ -8,7 +8,7 @@ if instance!=noone and not o_npc.conv_obj{
 	draw_rectangle(margin_x1-1,margin_y1,margin_x2,margin_y2,1)
 	
 	draw_set_font(normal)
-	draw_set_color(c_white)
+	draw_set_color(c_slot_border)
 	draw_set_halign(fa_center)
 	draw_set_valign(fa_middle)
 	draw_text(name_x,name_y,name)

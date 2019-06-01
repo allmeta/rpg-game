@@ -16,7 +16,7 @@ draw_rectangle(name_x1-1,name_y1,name_x2,name_y2,1)
 if(is_decision){
 	//optionzz <3
 	draw_set_font(normal)
-	draw_set_color(c_white)
+	draw_set_color(c_slot_border)
 	for(var i=0; i<array_length_1d(text[index]);i++){
 		var t=text[index]
 		//selected indicator
@@ -27,11 +27,11 @@ if(is_decision){
 		}
 		draw_text_ext(margin_x1+30,margin_y1+10+(i)*30,
 		t[i],-1,box_w-10)
-		draw_set_color(c_white)
+		draw_set_color(c_slot_border)
 	}
 }else {
 	draw_set_font(normal)
-	draw_set_color(c_white)
+	draw_set_color(c_slot_border)
 	var t=string_copy(text[index],0,counter)
 	draw_text_ext(margin_x1+5,margin_y1+5,t,-1,box_w-10)
 	

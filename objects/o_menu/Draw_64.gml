@@ -16,7 +16,7 @@ if(toggled_menu){
 			hovered_index=i
 		}
 		//draw_set_font(big)
-		draw_set_color(c_white)
+		draw_set_color(c_slot_border)
 		if hovered_index==i or toggled_menu_indexes[i]==toggled_index draw_set_color(c_mint)
 		//draw_set_halign(fa_center)
 		draw_text(index_coords[# i, 0],
