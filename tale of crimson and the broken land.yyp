@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "10d02973-5e3f-4a17-97c9-aec9bdbf2b7d",
+            "Value": {
+                "id": "026d16c8-cdde-4ea1-92a4-486f5d6b3000",
+                "resourcePath": "sprites\\s_misc\\s_misc.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "12415f08-946d-4024-bcdf-f1c2817234cd",
             "Value": {
                 "id": "73b48e81-f36e-4381-bdbb-a8ff27fa38e0",
@@ -527,6 +535,14 @@
             }
         },
         {
+            "Key": "8f24bad0-d1ae-4558-a7de-306afaa0a056",
+            "Value": {
+                "id": "456ddbc1-859e-4ea4-a39a-0e093f55b676",
+                "resourcePath": "scripts\\script_execute_alt\\script_execute_alt.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8f74ea62-180a-4a90-8c76-0d0ea896acbe",
             "Value": {
                 "id": "1d6aca68-d46b-46c7-b67b-08ca12d8bee5",
@@ -671,6 +687,14 @@
             }
         },
         {
+            "Key": "b4983b81-65ff-4226-bb8a-819cc5387327",
+            "Value": {
+                "id": "5bee3f1e-12c3-40ea-bfc5-c8b2daea171e",
+                "resourcePath": "datafiles_yy\\quests.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "b86e38ce-dd01-4725-aa12-3842b136b4d6",
             "Value": {
                 "id": "2d9a6118-0731-4c53-8205-e1847bf96402",
@@ -711,6 +735,14 @@
             }
         },
         {
+            "Key": "bec0e9ce-78cc-484d-8c5f-ccaea3742538",
+            "Value": {
+                "id": "6718ae74-ef17-440d-bd4f-2b382b135714",
+                "resourcePath": "views\\bec0e9ce-78cc-484d-8c5f-ccaea3742538.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c4a44b2a-5d7a-4494-aa88-47e47c6d7eaa",
             "Value": {
                 "id": "543c85c6-90b0-4d42-a96e-636fab8f1dba",
@@ -740,6 +772,14 @@
                 "id": "55291da5-e9c8-4bf1-a493-28209f41938b",
                 "resourcePath": "objects\\o_rock_big\\o_rock_big.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "cb33cc1c-50ee-425e-bd66-880d4a9dd904",
+            "Value": {
+                "id": "f7e7c697-1b0b-40a8-8a34-719f11a52b92",
+                "resourcePath": "scripts\\process_items\\process_items.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -931,7 +971,9 @@
         "41b3ad70-049b-47f7-b60a-6d15e64d843e",
         "a8f405c2-5194-490d-8e35-9959e1a24865",
         "f4b96046-119b-48a6-ac66-a49d1b252358",
-        "4b7412c3-720c-493b-a3b2-baa57bbe7965"
+        "4b7412c3-720c-493b-a3b2-baa57bbe7965",
+        "cb33cc1c-50ee-425e-bd66-880d4a9dd904",
+        "8f24bad0-d1ae-4558-a7de-306afaa0a056"
     ],
     "tutorial": ""
 }
