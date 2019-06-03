@@ -17,6 +17,7 @@ else{
 	else {
 		instance_destroy(self);
 		o_npc.conv_obj=false //destroy
+		o_player.in_conversation=false
 		exit
 	}
 				

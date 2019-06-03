@@ -1,11 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
+#region move
 mmx=keyboard_check(ord("D")) - keyboard_check(ord("A"))
 mmy=keyboard_check(ord("S"))-keyboard_check(ord("W"))
-if mmx==0 and mmy==0 {
+if mmx==0 and mmy==0 //cant move if in either of these states
+	or in_conversation 
+	or o_menu.toggled_menu{
 	image_speed=0;
 	image_index=dir*frames
-	exit;
+	exit; //TODO bad solution
 }
 
 m=point_direction(0,0,mmx,mmy)
@@ -26,5 +29,5 @@ if(mmx!=0 or mmy!=0){
   image_speed=0
   image_index=dir*frames
 }
-
+#endregion
 depth=-y

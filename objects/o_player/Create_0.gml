@@ -11,3 +11,6 @@ vy=0
 wdir=0
 
 name="You"
+in_conversation=false
+
+show_debug_message(bool(noone))

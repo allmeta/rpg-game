@@ -9,7 +9,7 @@ conv_speaker[0]=""
 conv_next_line[0]=-1
 name="default"
 
-conv_obj=noone
+conv_obj=false
 
 image_speed=1/10
 
