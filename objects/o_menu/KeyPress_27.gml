@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-toggled_menu=!toggled_menu
+if not o_player.in_conversation toggled_menu=!toggled_menu
