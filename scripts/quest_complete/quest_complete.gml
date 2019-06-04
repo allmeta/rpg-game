@@ -11,3 +11,8 @@ var i=len-1; repeat len{
 	i--
 }
 ds_list_add(o_quest_manager.quests_complete,argument0)
+
+//update lists
+with o_menu_quest{
+	event_user(1)	
+}

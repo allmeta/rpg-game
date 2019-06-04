@@ -23,3 +23,7 @@ var i=0; repeat cq_len{
 	quests_complete[#i,4]=offset+str_h
 	i++
 }
+//update lists
+quest_show_list=[quests_complete,quests_active]
+quest_status_list=[o_quest_manager.quests_complete,
+				   o_quest_manager.quests_active]

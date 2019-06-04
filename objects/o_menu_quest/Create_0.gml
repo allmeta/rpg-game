@@ -39,9 +39,6 @@ cq_len=ds_list_size(o_quest_manager.quests_complete)
 quest_show_len=[cq_len,aq_len]
 event_user(1) //q list
 reward_items=noone //to be grid
-quest_show_list=[quests_complete,quests_active]
-quest_status_list=[o_quest_manager.quests_complete,
-				   o_quest_manager.quests_active]
 event_user(0) //q reward
 
 

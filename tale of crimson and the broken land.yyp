@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "795838bc-1794-40a2-9be4-0fcb8789706f",
+            "Value": {
+                "id": "37910b81-e022-49ae-8f13-de746293fa5b",
+                "resourcePath": "sprites\\spr_slash\\spr_slash.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7aafa319-a2a8-4716-b403-610f94384102",
             "Value": {
                 "id": "4d580b8a-77aa-4be9-bbc6-2ac366ae61bb",
