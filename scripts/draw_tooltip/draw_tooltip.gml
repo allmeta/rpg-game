@@ -1,3 +1,7 @@
+///@arg x
+///@arg y
+///@arg item_id
+
 var xx=argument0
 var yy=argument1
 var item_id=argument2
@@ -7,8 +11,8 @@ var h=100
 var ehx= xx-w <0 //clamp xx too
 var ehy=yy-h <0
 var slotgap=o_inv.slot_gap
-var x_offset=xx+ehx*(w+size + slotgap*2) - slotgap
-var y_offset=yy + ehy*(h+size + slotgap*2) - slotgap       //check for roof, moving tooltip down if over screen
+var x_offset=xx+ehx*(w+o_inv.slot_size + slotgap*2) - slotgap
+var y_offset=yy + ehy*(h+o_inv.slot_size + slotgap*2) - slotgap       //check for roof, moving tooltip down if over screen
 var offset=10
 var current_height=0
 		

@@ -38,26 +38,34 @@ draw_text(tab_b_x,tab_y1,"Completed")
 draw_set_halign(fa_left)
 #endregion
 #region list
-if show_active{
-	var i=0; repeat q_len{
-		var q=quests[|i]
-		
-		if quest_show==i{
-			draw_set_font(normal_bold)
-			draw_set_color(c_mint)
-		}else{
-			draw_set_font(normal)
-			draw_set_color(c_slot_border)
-		}
-		var offset=list_y+40*i
-		draw_text(x+40,offset,q[?"name"])
-		draw_line(x+40,offset+30,rh-40,offset+30)
-		i++
+var i=0; repeat quest_show_len[quest_show]{
+	if quest_show==i and quest_info_tab==show_active{
+		draw_set_font(normal_bold)
+		draw_set_color(c_empty_slot)
+		draw_rectangle(	current_list[#i,0],
+						current_list[#i,1],
+						current_list[#i,3],
+						current_list[#i,4],0)
+		draw_set_color(c_mint)
+	}else if quest_hover==i{
+		draw_set_font(normal)
+		draw_set_color(c_empty_slot_hover)
+		draw_rectangle(	current_list[#i,0],
+						current_list[#i,1],
+						current_list[#i,3],
+						current_list[#i,4],0)
+		draw_set_color(c_mint)
+	}else{
+		draw_set_font(normal)
+		draw_set_color(c_slot_border)
 	}
+	draw_text(current_list[#i,0]+40,
+				current_list[#i,1],
+				current_list[#i,2])
+	i++
 }
 #endregion
 #region desc
-var q=quests[|quest_show]
 //sep line
 draw_set_color(c_slot_border)
 draw_line(rh,y,rh,h)
@@ -66,36 +74,43 @@ draw_set_font(normal_bold)
 draw_set_color(c_mint)
 draw_set_halign(fa_center)
 
-draw_text(title_x,tab_y1,q[?"name"])
-draw_line(rh+40,tab_y2,w-40,tab_y2)
+draw_text(title_x,tab_y1,q_active[?"name"])
+draw_line(desc_x,tab_y2,w-40,tab_y2)
 
 //desc
 draw_set_font(normal)
 draw_set_color(c_slot_border)
 draw_set_halign(fa_left)
-var dh=string_height("a")
-draw_text_ext(rh+40,list_y,q[?"desc"],dh,w-rh-80)
-
+draw_text_ext(desc_x,list_y,q_active[?"desc"],-1,w-rh-80)
+#endregion
+#region reward
 //reward
-draw_text(rh+40,reward_y,"Reward")
-draw_set_halign(fa_center)
-var rewards=q[?"reward"]
-var r_len=ds_list_size(rewards)
+draw_text(desc_x,reward_y,"Reward")
+if (reward_gold_text)!="" {
+	draw_text(desc_x,reward_gold_y,reward_gold_text)
+	draw_sprite_ext(s_gold,1,reward_gold_spr_x,
+	reward_gold_spr_y,1/2,1/2,0,-1,1)
+}
 var i=0; repeat r_len{
-	var r=rewards[|i]
-	var r_type=r[?"type"]
-	if r_type=="gold"{
-		draw_text(reward_x1+(i%2)*reward_offset_x,
-			      reward_y+floor(i/2)*40+40,
-				  r[?"amount"])
-	}else if r_type=="item"{
-		
-		draw_text(reward_x1+(i%2)*reward_offset_x,
-			      reward_y+floor(i/2)*20+40,
-				  o_global.items[#r[?"id"],_NAME])
-	}
+	draw_set_color(c_empty_slot)
+	draw_rectangle(reward_items[#i,0],reward_items[#i,1],
+				   reward_items[#i,2],reward_items[#i,3],0)
+	draw_set_color(c_slot_border)
+	draw_rectangle(reward_items[#i,0],reward_items[#i,1],
+				   reward_items[#i,2],reward_items[#i,3],1)
+	draw_sprite(reward_items[#i,4],
+				reward_items[#i,5],
+				reward_items[#i,6],
+				reward_items[#i,7])
 	i++
 	
+	
+}
+//hover tooltip
+if rw_hover!=-1{
+	draw_tooltip(reward_items[# rw_hover,0],
+				reward_items[# rw_hover,1],
+				reward_items[# rw_hover,8])
 }
 
 #endregion

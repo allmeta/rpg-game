@@ -19,9 +19,9 @@ if (o_menu.toggled_menu && o_menu.toggled_index=="Equip"){
 	draw_rectangle(x,y,x+size,y+size,1)
 	if item_id!=-1{
 		draw_sprite_ext(
-										o_global.items[# item_id,_SPRITE],
-										o_global.items[# item_id,_SPRITE_ID],
-										x+(size)/2,y+(size)/2,1,1,0,held? c_empty_slot : -1,1)
+			o_global.items[# item_id,_SPRITE],
+			o_global.items[# item_id,_SPRITE_ID],
+			x+(size)/2,y+(size)/2,1,1,0,held? c_empty_slot : -1,1)
 		
 	}
 	draw_set_font(stack)
