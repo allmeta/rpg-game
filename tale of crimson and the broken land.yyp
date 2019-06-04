@@ -663,6 +663,14 @@
             }
         },
         {
+            "Key": "a58c846a-ffd6-4037-8d09-5e441c53c24c",
+            "Value": {
+                "id": "6e04b5b7-21b1-433f-a37c-87f5737c994b",
+                "resourcePath": "scripts\\quest_add\\quest_add.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a8f405c2-5194-490d-8e35-9959e1a24865",
             "Value": {
                 "id": "70e3c6ea-5bf3-4fb6-a8c3-0fdaa863a471",
@@ -772,6 +780,14 @@
                 "id": "6718ae74-ef17-440d-bd4f-2b382b135714",
                 "resourcePath": "views\\bec0e9ce-78cc-484d-8c5f-ccaea3742538.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c1fc24dd-728b-4c54-9d4a-b82af36980c2",
+            "Value": {
+                "id": "d640e759-54e2-469d-b5da-d89817f142bb",
+                "resourcePath": "scripts\\quest_complete\\quest_complete.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -927,14 +943,6 @@
             }
         },
         {
-            "Key": "eaec734f-60b0-406f-bad9-c776423d92ee",
-            "Value": {
-                "id": "95011cc1-e739-4be5-932f-79c1765a7921",
-                "resourcePath": "scripts\\draw_icon\\draw_icon.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "ebd54812-0a62-4f43-b6fe-b348c8bb6793",
             "Value": {
                 "id": "4681a90e-de6d-468e-9e46-b24befa93c7e",
@@ -1031,7 +1039,8 @@
         "cb33cc1c-50ee-425e-bd66-880d4a9dd904",
         "8f24bad0-d1ae-4558-a7de-306afaa0a056",
         "07800222-4395-4bd1-a902-3ae6daabcaaa",
-        "eaec734f-60b0-406f-bad9-c776423d92ee"
+        "a58c846a-ffd6-4037-8d09-5e441c53c24c",
+        "c1fc24dd-728b-4c54-9d4a-b82af36980c2"
     ],
     "tutorial": ""
 }

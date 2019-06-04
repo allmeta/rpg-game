@@ -1,8 +1,8 @@
 {
-    "id": "eaec734f-60b0-406f-bad9-c776423d92ee",
+    "id": "c1fc24dd-728b-4c54-9d4a-b82af36980c2",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "draw_icon",
+    "name": "quest_complete",
     "IsCompatibility": false,
     "IsDnD": false
 }

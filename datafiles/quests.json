@@ -7,23 +7,18 @@
     "turn_in": "inst_oldman",
     "item_id": 12,
     "item_count": 8,
-    "reward": [
-      {
-        "type": "gold",
-        "amount": 10
-      },
-      {
-        "type": "item",
-        "id": 10
-      }
-    ]
+    "reward_gold": 10,
+    "reward_item": [10, 11]
   },
   {
-    "name": "Meme test 123",
-    "desc": "meme"
-  },
-  {
-    "name": "A new beginning",
-    "desc": "meme"
+    "id": 1,
+    "name": "Meme",
+    "type": "slay",
+    "desc": "Meme\nMeme\nMemes\nNicememe",
+    "turn_in": "inst_oldman",
+    "enemy_inst": "inst_dog",
+    "slay_count": 8,
+    "reward_gold": 30,
+    "reward_item": [3]
   }
 ]
