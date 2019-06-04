@@ -21,7 +21,7 @@ var i=0; repeat(index_len){
 	menu_length+=string_width(toggled_menu_indexes[i])
 	i++
 }
-var gap=20
+var gap=50
 menu_length+=(index_len-1)*gap
 
 var cur_len=0

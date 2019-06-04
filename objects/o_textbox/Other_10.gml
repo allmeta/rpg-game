@@ -1,6 +1,6 @@
 /// @description set name width
 // You can write your code in this editor
-draw_set_font(normal)
+draw_set_font(normal_bold)
 name_w=string_width(speaker[index].name)
 name_x2=name_x1+name_w+2
 

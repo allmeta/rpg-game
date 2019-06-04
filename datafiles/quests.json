@@ -3,6 +3,7 @@
     "id": 0,
     "name": "Old man needs flowers",
     "type": "gather",
+    "desc": "An old man wanted you to get him some flowers.\nWho knows what he will use them for.",
     "turn_in": "inst_oldman",
     "item_id": 12,
     "item_count": 8,
@@ -16,5 +17,13 @@
         "id": 10
       }
     ]
+  },
+  {
+    "name": "Meme test 123",
+    "desc": "meme"
+  },
+  {
+    "name": "A new beginning",
+    "desc": "meme"
   }
 ]

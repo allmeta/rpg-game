@@ -1,4 +1,4 @@
-///@arg ds_map
+///@arg item_list
 var m=argument0
 totalItems=ds_list_size(m)
 items=ds_grid_create(totalItems,15)

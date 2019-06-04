@@ -25,12 +25,13 @@ if(o_menu.toggled_menu && o_menu.toggled_index=="Equip"){
 	
 	//gold coins ty
 	draw_set_color(c_empty_slot)
-	draw_rectangle(x+25, h-60*3,x+slot_gap*5+slot_size*5+20,h-60*3+20,1)
-	draw_rectangle(x+25, h-60*3,x+slot_gap*5+slot_size*5+20,h-60*3+20,0)
+	draw_rectangle(gold_x, gold_y,gold_x2,gold_y2,0)
+	draw_set_color(c_slot_border)
+	draw_rectangle(gold_x, gold_y,gold_x2,gold_y2,1)
 	
-	draw_sprite_ext(s_gold,0,x+25,h-60*3,1/2,1/2,0,-1,1)
+	draw_sprite_ext(s_gold,0,gold_x+12,gold_y+12,1/2,1/2,0,-1,1)
 	
 	draw_set_color(c_mint)
 	draw_set_font(normal)
-	draw_text(x+50,h-60*3+3,gold_count)
+	draw_text(gold_x+24,gold_y,gold_count)
 }

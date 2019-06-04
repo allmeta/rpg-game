@@ -15,15 +15,16 @@ draw_rectangle(name_x1-1,name_y1,name_x2,name_y2,1)
 //conv text
 if(is_decision){
 	//optionzz <3
-	draw_set_font(normal)
 	draw_set_color(c_slot_border)
 	for(var i=0; i<array_length_1d(text[index]);i++){
+		draw_set_font(normal)
 		var t=text[index]
 		//selected indicator
 		draw_text(margin_x1+5,margin_y1+10+i*30,string(i+1)+">")
 		if select_index==i{
 			//draw_sprite(s_arrow,-1,margin_x1+14,margin_y1+20+(i)*30)
 			draw_set_color(c_mint)
+			draw_set_font(normal_bold)
 		}
 		draw_text_ext(margin_x1+30,margin_y1+10+(i)*30,
 		t[i],-1,box_w-10)
@@ -42,4 +43,6 @@ if(is_decision){
 }
 //name
 //draw_set_valign(fa_middle)
+draw_set_font(normal_bold)
+draw_set_color(c_mint)
 draw_text(name_x1+2,name_y1,speaker[index].name)
