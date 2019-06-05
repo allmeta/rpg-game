@@ -31,6 +31,10 @@ if(o_menu.toggled_menu && o_menu.toggled_index=="Equip"){
 	
 	draw_set_color(c_mint)
 	draw_set_font(normal)
-	draw_text(gold_x,gold_y,gold_count)
-	draw_sprite_ext(s_gold,0,gold_x2,gold_y+13,1/2,1/2,0,-1,1)
+	var i=0; repeat 3{
+		draw_text(gold_x[i],gold_y,gold_count[i])
+		draw_sprite_ext(s_gold,i,gold_x2[i],gold_y+13,1/2,1/2,0,-1,1)
+		i++
+	}
+	
 }

@@ -18,10 +18,18 @@ for(var i =0; i < slots; i++){
 	inventory[| i]=k
 }
 
-gold_count=01234567
-gold_x=x+20
+gold_count=[3,4,12] //g,s,c
 gold_y=40+y+floor(i/5)*(slot_gap+slot_size)
 draw_set_font(normal)
-gold_x2=gold_x+string_width(string(gold_count))+12
+gold_x=[]
+gold_x2=[]
+var offset=x+20
+var i=0; repeat 3{
+	gold_x[i]=offset
+	offset+=string_width(string(gold_count[i]))+12
+	gold_x2[i]=offset
+	offset+=12
+	i++
+}
 held_item=-1
 hovered_item=-1
