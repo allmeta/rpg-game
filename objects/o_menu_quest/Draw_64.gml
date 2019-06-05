@@ -2,13 +2,13 @@
 // You can write your code in this editor
 if(o_menu.toggled_menu && o_menu.toggled_index=="Quest"){
 #region main
-draw_set_color(c_background)
-draw_rectangle(x,y,w,h,0)
-draw_set_alpha(1)
+//draw_set_color(c_background)
+//draw_rectangle(x,y,w,h,0)
+//draw_set_alpha(1)
 	
-draw_set_alpha(1)
-draw_set_color(c_mint)
-draw_rectangle(x-1,y,w,h,1)
+//draw_set_alpha(1)
+//draw_set_color(c_mint)
+//draw_rectangle(x-1,y,w,h,1)
 #endregion
 #region tabs
 

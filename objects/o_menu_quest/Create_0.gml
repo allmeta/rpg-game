@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+depth=-5
 w=room_width*.9-40
-h=room_height*.9-40
+h=room_height*.8
 x=room_width-w
-y=room_height-h
+y=room_height*.1+40
 
 rh=room_width/2 //room half
 rhh=(x+rh)/2

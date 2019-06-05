@@ -2,6 +2,23 @@
 // You can write your code in this editor
 //inventory
 if(toggled_menu){
+	//BACKGROUND FOR ALL SHIT
+	draw_set_color(c_background)
+	draw_rectangle(x,y,w,h,0)
+	draw_set_alpha(1)
+	
+	draw_set_alpha(1)
+	draw_set_color(c_mint)
+	draw_rectangle(x-1,y,w,h,1)
+	
+	//tab bakground rect
+	draw_set_color(c_background)
+	draw_rectangle(x,menu_bounds_y,w,h,0)
+	draw_set_alpha(1)
+	
+	draw_set_alpha(1)
+	draw_set_color(c_mint)
+	draw_rectangle(x-1,menu_bounds_y,w,h,1)
 	
 	//menu text tabs thing
 	//reset hover before draw xds
@@ -10,10 +27,10 @@ if(toggled_menu){
 	for( var i=0;i<index_len;i++){
 		//check hover here :S
 		if (point_in_rectangle(
-				mx,my, index_coords[# i, 0],
-				menu_bounds_y,
-				index_coords[# i, 0]+index_coords[# i, 1],
-				menu_bounds_y+string_height("e"))){
+			mx,my, index_coords[# i, 0],
+			menu_bounds_y,
+			index_coords[# i, 0]+index_coords[# i, 1],h)){
+				
 			hovered_index=i
 		}
 		draw_set_color(c_slot_border)
@@ -26,8 +43,8 @@ if(toggled_menu){
 			draw_set_font(big_bold)
 		}
 		draw_text(index_coords[# i, 0],
-								menu_bounds_y,
-								toggled_menu_indexes[i])
+				menu_bounds_y,
+				toggled_menu_indexes[i])
 	}
 	
 }else{

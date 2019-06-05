@@ -1,8 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+x=room_width*.1+40
+y=room_height*.1+40
+w=room_width*.9-40
+h=room_height*.9-40
 
-menu_bounds_x=room_width*.8
 menu_bounds_y=room_height*.8
 
 toggled_menu=false

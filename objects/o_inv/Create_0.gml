@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+depth=-5
 x=room_width/2
 y=room_height*.1+40
 w=room_width*.9-40
-h=room_height*.9-40
+h=room_height*.8
 
 inventory=ds_list_create()
 slot_size=60
