@@ -38,7 +38,7 @@ draw_text(tab_b_x,tab_y1,"Completed")
 draw_set_halign(fa_left)
 #endregion
 #region list
-var i=0; repeat quest_show_len[quest_show]{
+var i=0; repeat quest_show_len[show_active]{
 	if quest_show==i and quest_info_tab==show_active{
 		draw_set_font(normal_bold)
 		draw_set_color(c_empty_slot)
@@ -60,8 +60,8 @@ var i=0; repeat quest_show_len[quest_show]{
 		draw_set_color(c_slot_border)
 	}
 	draw_text(current_list[#i,0]+40,
-				current_list[#i,1],
-				current_list[#i,2])
+			current_list[#i,1],
+			current_list[#i,2])
 	i++
 }
 #endregion
@@ -69,23 +69,37 @@ var i=0; repeat quest_show_len[quest_show]{
 //sep line
 draw_set_color(c_slot_border)
 draw_line(rh,y,rh,h)
-//title
-draw_set_font(normal_bold)
-draw_set_color(c_mint)
-draw_set_halign(fa_center)
+if q_active!=-1{
+	//title
+	draw_set_font(big)
+	draw_set_color(c_mint)
+	draw_set_halign(fa_center)
 
-draw_text(title_x,tab_y1,q_active[?"name"])
-draw_line(desc_x,tab_y2,w-40,tab_y2)
+	draw_text(title_x,tab_y1,q_active[?"name"])
+	draw_line(desc_x,tab_y2,w-40,tab_y2)
 
-//desc
-draw_set_font(normal)
-draw_set_color(c_slot_border)
-draw_set_halign(fa_left)
-draw_text_ext(desc_x,list_y,q_active[?"desc"],-1,w-rh-80)
+	//desc
+	draw_set_font(normal)
+	draw_set_color(c_slot_border)
+	draw_set_halign(fa_left)
+	draw_text_ext(desc_x,list_y,q_active[?"desc"],-1,w-rh-80)
+}else{
+	
+	//no quest at all shit
+	draw_set_color(c_slot_border)
+	draw_set_halign(fa_center)
+	draw_set_font(normal)
+	draw_text((rh+w)/2,(y+h)/2,"No selected quest.")
+	draw_set_halign(fa_left)
+	exit //no reward
+}
 #endregion
 #region reward
-//reward
+draw_set_color(c_mint)
+draw_set_font(big)
 draw_text(desc_x,reward_y,"Reward")
+draw_set_color(c_slot_border)
+draw_set_font(normal)
 if (reward_gold_text)!="" {
 	draw_text(desc_x,reward_gold_y,reward_gold_text)
 	draw_sprite_ext(s_gold,1,reward_gold_spr_x,
@@ -117,12 +131,4 @@ if rw_hover!=-1{
 }
 
 #endregion
-
-
-
-
-
-
-
-
 }

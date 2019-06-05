@@ -13,14 +13,26 @@
   },
   {
     "id": 1,
-    "name": "Meme",
+    "name": "Gold n xp",
     "type": "slay",
     "desc": "Meme\nMeme\nMemes\nNicememe",
     "turn_in": "inst_oldman",
     "enemy_inst": "inst_dog",
     "slay_count": 8,
     "reward_gold": 30,
-    "reward_item": [3],
-    "reward_exp": 0
+    "reward_item": [],
+    "reward_exp": 5000
+  },
+  {
+    "id": 2,
+    "name": "Exp",
+    "type": "slay",
+    "desc": "Meme\nMeme\nMemes\nNicememe",
+    "turn_in": "inst_oldman",
+    "enemy_inst": "inst_dog",
+    "slay_count": 8,
+    "reward_gold": 0,
+    "reward_item": [],
+    "reward_exp": 230
   }
 ]

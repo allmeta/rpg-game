@@ -1,4 +1,13 @@
 /// @description q list
+aq_len=ds_list_size(o_quest_manager.quests_active)
+cq_len=ds_list_size(o_quest_manager.quests_complete)
+quest_show_len=[cq_len,aq_len]
+
+//switch to c if no q on a
+if not aq_len and cq_len{
+	quest_info_tab=0
+	show_active=0
+}
 quests_active=ds_grid_create(aq_len,5) //x,y,text,x2,y2
 var i=0; repeat aq_len{
 	var aq=o_quest_manager.quests_active[|i]
@@ -27,3 +36,4 @@ var i=0; repeat cq_len{
 quest_show_list=[quests_complete,quests_active]
 quest_status_list=[o_quest_manager.quests_complete,
 				   o_quest_manager.quests_active]
+current_list=quest_show_list[show_active] //what list to show

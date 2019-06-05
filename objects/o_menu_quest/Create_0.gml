@@ -21,10 +21,10 @@ list_y=tab_y2+30
 reward_y=h-240
 rw=o_inv.slot_size
 rg=o_inv.slot_gap
+r_len=0
 
 rw_hover=-1
 quest_hover=-1
-
 draw_set_font(normal)
 str_h=string_height("a")
 
@@ -35,12 +35,10 @@ quest_info_tab=1 //which list the selected quest is in
 //1=active, 0=complete
 q_active=0 //selected quest index
 
-aq_len=ds_list_size(o_quest_manager.quests_active)
-cq_len=ds_list_size(o_quest_manager.quests_complete)
-quest_show_len=[cq_len,aq_len]
 event_user(1) //q list
+
 reward_items=noone //to be grid
 event_user(0) //q reward
 
 
-current_list=quest_show_list[show_active] //what list to show
+

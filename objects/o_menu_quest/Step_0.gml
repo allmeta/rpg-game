@@ -4,10 +4,10 @@
 var check=false
 var i=0; repeat quest_show_len[show_active]{
 	if point_in_rectangle(mx,my,
-				quests_active[#i,0],
-				quests_active[#i,1],
-				quests_active[#i,3],
-				quests_active[#i,4]){
+				current_list[#i,0],
+				current_list[#i,1],
+				current_list[#i,3],
+				current_list[#i,4]){
 		check=true
 		quest_hover=i
 		break
@@ -35,16 +35,16 @@ if not check rw_hover=-1
 //klikk stuff
 if mouse_check_button_pressed(mb_left){
 	if point_in_rectangle(mx,my,x,y,rhh,tab_y2){
-		show_active=true
+		show_active=1
 		current_list=quest_show_list[show_active] //what list to show
 	}
 	else if point_in_rectangle(mx,my,rhh,y,rh,tab_y2){
-		show_active=false
+		show_active=0
 		current_list=quest_show_list[show_active] //what list to show
 	}else if quest_hover!=-1{
 		quest_show=quest_hover
 		quest_info_tab=show_active
-		event_user(1)
+		//event_user(1)
 		event_user(0)
 		
 	}
