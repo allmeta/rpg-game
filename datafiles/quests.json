@@ -8,7 +8,8 @@
     "item_id": 12,
     "item_count": 8,
     "reward_gold": 10,
-    "reward_item": [10, 11]
+    "reward_item": [10, 11, 9, 8, 7],
+    "reward_exp": 250
   },
   {
     "id": 1,
@@ -19,6 +20,7 @@
     "enemy_inst": "inst_dog",
     "slay_count": 8,
     "reward_gold": 30,
-    "reward_item": [3]
+    "reward_item": [3],
+    "reward_exp": 0
   }
 ]

@@ -6,6 +6,7 @@ q_active=o_quest_manager.quests[|qid]
 var gt="You will receive: "
 var rewards=q_active[?"reward_item"]
 var r_gold=q_active[?"reward_gold"]
+var r_exp=q_active[?"reward_exp"]
 var rg_len=string_width(gt+string(r_gold))
 var offset_y=str_h
 if r_gold {
@@ -15,6 +16,7 @@ if r_gold {
 	reward_gold_spr_y=reward_y+offset_y*3/2
 	offset_y*=2
 }else reward_gold_text=""
+#region item
 r_len=ds_list_size(rewards)
 reward_items=ds_grid_create(r_len,9) //x,y,w,h,spr,spr_id,sprx,spry,item_id
 var i=0; repeat r_len{
@@ -33,3 +35,10 @@ var i=0; repeat r_len{
 	reward_items[#i,8]=r
 	i++
 }
+#endregion
+#region exp
+if r_exp{
+	reward_exp_text="Experience: "+string(r_exp)
+	reward_exp_y=reward_y+offset_y+ceil(i/4)*(rw+rg)
+}else reward_exp_text=""
+#endregion

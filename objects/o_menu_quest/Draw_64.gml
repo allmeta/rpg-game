@@ -91,6 +91,9 @@ if (reward_gold_text)!="" {
 	draw_sprite_ext(s_gold,1,reward_gold_spr_x,
 	reward_gold_spr_y,1/2,1/2,0,-1,1)
 }
+if reward_exp_text!=""{
+	draw_text(desc_x,reward_exp_y,reward_exp_text)
+}
 var i=0; repeat r_len{
 	draw_set_color(c_empty_slot)
 	draw_rectangle(reward_items[#i,0],reward_items[#i,1],
