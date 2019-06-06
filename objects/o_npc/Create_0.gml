@@ -7,6 +7,7 @@ conv_text[0]=""
 
 conv_speaker[0]=""
 conv_next_line[0]=-1
+conv_scripts[0]=-1
 name="default"
 
 conv_obj=false
@@ -14,6 +15,9 @@ conv_obj=false
 image_speed=1/10
 
 anim_yscale=0
+
+//quest+conv
+
 
 //states
 counter=0

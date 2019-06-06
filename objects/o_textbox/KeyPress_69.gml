@@ -6,6 +6,20 @@ and not is_decision{
 	counter=text_len
 }
 else{
+	//execute script if any
+	var scr=scripts[index]
+	if is_decision {
+		scr=scr[select_index]
+	}
+	if is_array(scr){
+		var scr_args=[]
+		array_copy(scr_args,0,scr,1,array_length_1d(scr)-1)
+		script_execute_alt(scr[0],scr_args)
+		
+	}else if scr!=-1 {
+		script_execute(scr)
+	}//nothing happens otherwise
+	
 	// next line
 	var next_index=next_line[index]
 	if is_decision{

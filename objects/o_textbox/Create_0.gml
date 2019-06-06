@@ -6,6 +6,7 @@ speaker=-1 //array
 text_len=0
 counter=0 //for not displaying text instantly
 next_line=-1 //array 
+scripts=-1 // array
 
 o_player.in_conversation=true
 

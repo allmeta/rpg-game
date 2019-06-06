@@ -11,4 +11,6 @@ conv_text[3]="How rude!"
 conv_speaker=[id,o_player,id,id]
 
 conv_next_line=[0,[2,3],-1,-1]
+
+conv_scripts=[-1,[-1,-1],[quest_add,0],-1]
 name="Old Man"
