@@ -8,28 +8,48 @@ if is_undefined(qid) {
 
 q_active=o_quest_manager.quests[|qid]
 
-var gt="You will receive: "
 var rewards=q_active[?"reward_item"]
-var r_gold=q_active[?"reward_gold"]
+var r_cur=q_active[?"reward_cur"]
 var r_exp=q_active[?"reward_exp"]
 r_len=ds_list_size(rewards)
 draw_set_font(normal)
-var rg_len=string_width(gt+string(r_gold))
 draw_set_font(big)
 var offset_y=string_height("Reward")
-reward_y=h-20-offset_y-(r_gold?1:0)*str_h-(r_exp?1:0)*str_h-ceil(r_len/4)*(rw+rg)
+reward_y=h-20-offset_y-str_h-(r_exp?1:0)*str_h-ceil(r_len/4)*(rw+rg)
 #region gold
-if r_gold {
-	reward_gold_text=gt+string(r_gold)
-	reward_gold_y=reward_y+offset_y
-	reward_gold_spr_x=rh+40+rg_len+12
-	reward_gold_spr_y=reward_gold_y+12
-	offset_y+=str_h
-}else reward_gold_text=""
+draw_set_font(normal)
+reward_cur_y=reward_y+offset_y
+rg_len=0
+if r_cur {
+	reward_cur_spr_y=reward_cur_y+12
+	reward_cur_indexes=[] //indexes to draw
+	reward_cur_x=[]
+	reward_cur_text=r_cur
+	reward_cur_spr_x=[]
+	var offset_gx=desc_x+string_width(gt)
+	var i=0;var j=0; repeat 3{ //j is for adding to reward_cur_indexes
+		if r_cur[|i]==0 {
+			i++; 
+			continue; //skip to next if 0
+		}
+		reward_cur_x[i]=offset_gx
+		offset_gx+=string_width(string(r_cur[|i]))+12
+		reward_cur_spr_x[i]=offset_gx
+		offset_gx+=12
+		reward_cur_indexes[j]=i
+		i++
+		j++
+	}
+	rg_len=j // LEN OF reward_cur_indexes
+}else {
+	//no money? suck a cock
+	reward_cur_indexes=[]	
+}
+
 #endregion
 #region item
 reward_items=ds_grid_create(r_len,9) //x,y,w,h,spr,spr_id,sprx,spry,item_id
-
+offset_y+=str_h
 var i=0; repeat r_len{
 	var r=rewards[|i]
 	

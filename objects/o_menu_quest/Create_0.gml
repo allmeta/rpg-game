@@ -22,6 +22,7 @@ reward_y=h-240
 rw=o_inv.slot_size
 rg=o_inv.slot_gap
 r_len=0
+gt="You will receive: "
 
 rw_hover=-1
 quest_hover=-1

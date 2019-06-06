@@ -100,11 +100,22 @@ draw_set_font(big)
 draw_text(desc_x,reward_y,"Reward")
 draw_set_color(c_slot_border)
 draw_set_font(normal)
-if (reward_gold_text)!="" {
-	draw_text(desc_x,reward_gold_y,reward_gold_text)
-	draw_sprite_ext(s_gold,1,reward_gold_spr_x,
-	reward_gold_spr_y,1/2,1/2,0,-1,1)
+
+draw_text(desc_x,reward_cur_y,gt)
+var i=0; repeat rg_len{
+	draw_text(reward_cur_x[reward_cur_indexes[i]],
+			  reward_cur_y,
+			  reward_cur_text[|reward_cur_indexes[i]])
+	draw_sprite_ext(s_cur,reward_cur_indexes[i],
+					reward_cur_spr_x[reward_cur_indexes[i]],
+					reward_cur_spr_y,1/2,1/2,0,-1,1)
+	i++
 }
+//if (reward_cur_text)!="" {
+//	draw_text(desc_x,reward_cur_y,reward_cur_text)
+//	draw_sprite_ext(s_cur,1,reward_cur_spr_x,
+//	reward_cur_spr_y,1/2,1/2,0,-1,1)
+//}
 if reward_exp_text!=""{
 	draw_text(desc_x,reward_exp_y,reward_exp_text)
 }

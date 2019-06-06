@@ -762,7 +762,7 @@
             "Key": "b912189a-e0ef-4457-980c-ac69936bdd8a",
             "Value": {
                 "id": "46105e87-d816-4c2c-a0de-3615f6f24eb2",
-                "resourcePath": "sprites\\s_gold\\s_gold.yy",
+                "resourcePath": "sprites\\s_cur\\s_cur.yy",
                 "resourceType": "GMSprite"
             }
         },

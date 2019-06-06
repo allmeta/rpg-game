@@ -18,16 +18,16 @@ for(var i =0; i < slots; i++){
 	inventory[| i]=k
 }
 
-gold_count=[3,4,12] //g,s,c
-gold_y=40+y+floor(i/5)*(slot_gap+slot_size)
+cur_count=[3,4,12] //g,s,c
+cur_y=40+y+floor(i/5)*(slot_gap+slot_size)
 draw_set_font(normal)
-gold_x=[]
-gold_x2=[]
+cur_x=[]
+cur_x2=[]
 var offset=x+20
 var i=0; repeat 3{
-	gold_x[i]=offset
-	offset+=string_width(string(gold_count[i]))+12
-	gold_x2[i]=offset
+	cur_x[i]=offset
+	offset+=string_width(string(cur_count[i]))+12
+	cur_x2[i]=offset
 	offset+=12
 	i++
 }
